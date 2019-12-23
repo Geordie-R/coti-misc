@@ -1,2 +1,2 @@
 # coti-misc
-Misc items for coti
+modification of a default script used to fix a clusterstamp error
