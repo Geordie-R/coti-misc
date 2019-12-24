@@ -79,10 +79,10 @@ else
     wget -q --show-progress --progress=bar:force 2>&1 https://www.dropbox.com/s/rpyercs56zmay0z/FullNode1_clusterstamp.csv -P /home/$username/coti-fullnode/
 fi
 
-chown coti /home/$username/coti-fullnode/FullNode1_clusterstamp.csv
-chgrp coti /home/$username/coti-fullnode/FullNode1_clusterstamp.csv
-chown coti /home/$username/coti-fullnode/fullnode.properties
-chgrp coti /home/$username/coti-fullnode/fullnode.properties
+chown $username /home/$username/coti-fullnode/FullNode1_clusterstamp.csv
+chgrp $username /home/$username/coti-fullnode/FullNode1_clusterstamp.csv
+chown $username /home/$username/coti-fullnode/fullnode.properties
+chgrp $username /home/$username/coti-fullnode/fullnode.properties
 
 certbot certonly --nginx --non-interactive --agree-tos -m $email -d $servername
 
