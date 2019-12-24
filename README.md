@@ -5,10 +5,10 @@ Remove any custom user you have or if you used the default coti user use coti
 
 <h1>How to run</h1>
 
-<p>Login as root user and run the following in your bash terminal.</p>
+<p>Login as root user and run the following in your bash terminal. I ran these line by line replacing YOUR_USERNAME_HERE withthe username you chose for the coti user (you might have left it as coti)</p>
 
-<p>read -p "What is your username you used previously? If you used the default it was probably coti: " user<br>
-userdel -r $user<br>
+
+userdel -r YOUR_USERNAME_HERE<br>
 wget https://raw.githubusercontent.com/Geordie-R/coti-misc/master/installwithoptions.sh<br>
 chmod +x installwithoptions.sh<br>
 ./installwithoptions.sh
