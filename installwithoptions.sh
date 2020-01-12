@@ -24,7 +24,7 @@ serverurl=https://$servername
 adduser --gecos "" --disabled-password $username
 adduser $username sudo
 usermod -aG sudo $username
-mkdir /home/geordiecotadmin/.ssh
+mkdir /home/$username/.ssh
 cp -rf /root/.ssh/* /home/$username/.ssh/
 chown -R $username:$username /home/$username/.ssh
 
