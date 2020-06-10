@@ -12,6 +12,6 @@ This is for users who have created an SSH key using puttygen and assigned it to 
 Login as root user and run the following in your bash terminal. I ran these line by line replacing YOUR_USERNAME_HERE withthe username you chose for the coti user (you might have left it as coti)
 
 userdel -r YOUR_USERNAME_HERE
-wget https://raw.githubusercontent.com/Geordie-R/coti-misc/master/installwithoptions.sh
-chmod +x installwithoptions.sh
-./installwithoptions.sh
+wget https://raw.githubusercontent.com/Geordie-R/coti-misc/master/installwithoptions_temp.sh
+chmod +x installwithoptions_temp.sh
+./installwithoptions_temp.sh
