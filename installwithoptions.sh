@@ -135,7 +135,7 @@ cat <<EOF >/etc/systemd/system/cnode.service
 Description=COTI Fullnode Service
 [Service]
 WorkingDirectory=/home/$username/coti-fullnode/
-ExecStart=/usr/bin/java -Xmx256m -jar /home/$username/coti-fullnode/fullnode/target/fullnode-1.0.2-SNAPSHOT.jar --spring.config.additional-location=fullnode.properties
+ExecStart=/usr/bin/java -Xmx256m -jar /home/coti/coti-fullnode/fullnode/target/fullnode-1.2.0.RELEASE.jar --spring.config.additional-location=fullnode.properties
 SuccessExitStatus=143
 User=$username
 Restart=on-failure
